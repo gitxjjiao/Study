@@ -1,0 +1,56 @@
+css背景background
+background-image:url(..)  元素使用的背景图像
+background-size：60px  背景图像的大小
+background-repeat：背景图像如何填充
+background-color：背景颜色
+
+css边框border
+border-color：四边框颜色(上下左右边框颜色设置：border-top-color、border-bottom-color、border-left-color、border-right-color)
+border-style：四边框样式(上下左右边框样式：border-top-style、border-bottom-style、border-left-style、border-right-style)
+border-width：四边框宽度(上下左右边框宽度设置：border-top-width、border-bottom-width、border-left-width、border-right-width)
+border-radius：四边圆角设置()
+boder-top-right-radius:定义边框右上角形状
+border-top-left-radius：定义边框左上角形状
+border-bottom-right-radius：定义边框右下角形状
+border-bottom-left-radius：定义边框左下角形状
+
+css字体font
+font-family：文本字体
+font-style：字体样式(取值：normal正常、italic斜体、oblique指定倾斜)
+font-size：字体大小
+font-weight：字体粗细
+font-stretch：收缩或拉伸字体
+font-variant：是否以小型大写字母字体显示文本
+
+css外边距margin
+margin-bottom：下外边距
+margin-left：左外边距
+margin-right：右外边距
+margin-top：上外边距
+
+css内边距padding
+padding-bottom：下内边距
+padding-left：左内边距
+padding-right：右内边距
+padding-top：上内边距
+
+css文本text
+color：文本颜色
+line-height：设置行高(指定长度、百分比都可指定不可负值)
+letter-spacing：字符间距(取值：normal默认间隔、<length指定间隔可以负值>)
+direction：文本方向
+text-align：文本水平对齐方式(取值：left内容左对齐、center内容居中对齐、right右对齐、justify两端对齐、start对齐开始边界、end对齐结束边界)
+text-decoration：文本的装饰效果
+text-decoration-color:装饰线条颜色
+text-decoration-line：none文字无装饰、underline下划线、overline上划线、line-through贯穿线、blink闪烁
+text-indent：文本首行缩进(取值：<length>指定长度缩进可以负值、<percentage>百分比文本缩进可以负值 )
+text-shadow：文本阴影效果(取值none无阴影) (<length>水平偏移值可以负值  <length>垂直偏移量可以负值  <length>阴影模糊值不允许负值)  color阴影颜色
+text-transform：文本大小写(取值：none无转换、uppercase换成大写、lowercase换成小写)
+css表格
+border-collapse：是否合并表格连框
+boeder-spacing：相邻单元格边框之间距离
+caption-side：表格标题位置
+empty-cells：是否显示表格中空单元格上的边框和背景
+css定位position
+position：relative绝对定位通过 top、right、bottom、left定位偏移属性
+          absolute相对定位根据父元素偏移
