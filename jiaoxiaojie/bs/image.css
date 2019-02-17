@@ -1,0 +1,17 @@
+*{
+    margin:0px;
+    padding:0px;
+    }
+.imge1{
+   width: 100%;
+    background-size: contain; 
+  
+}
+
+@media only screen and (max-width:568px){
+         .imge1{padding-top: 35px;}
+     }
+   
+@media only screen and (min-width:800px){
+         .imge1{padding-top: 70px;}
+     } 

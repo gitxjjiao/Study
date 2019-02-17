@@ -6,6 +6,24 @@ body{
     
     }
 
+.cont{
+    
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cont p{
+    color: darkgray;
+    font-size: small;
+    }
+.add-1{
+    text-align: center;
+    
+}
+
+
+  
+   
 .top{
     height: 150px;
     background-color: #E9ECEF;
@@ -37,4 +55,3 @@ body{
     height:150px;
     background-color: #E9ECEF;
     }
-    
