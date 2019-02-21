@@ -11,6 +11,8 @@
 	    <link rel="stylesheet" type="text/css" href="head-foot.css">
         <link rel="stylesheet" type="text/css" href="image.css">
         <link rel="stylesheet" type="text/css" href="index.css">
+        
+        
 	    <script type="text/javascript">
 	        window.onscroll = function() {
 	
@@ -28,6 +30,18 @@
 	            });
 	        });
             
+              $(document).ready(function(){
+               $(".fen .show").mouseover(function(){
+                  $(this).parent(".fen").children(".show").css("display","none");
+                  $(this).parent(".fen").children(".hidden").fadeIn();
+                  $(this).parent(".fen").children(".hidden").css("display","block");
+                })  ;
+               $(".fen .hidden").mouseout(function(){
+                  $(this).parent(".fen").children(".hidden").css("display","none");
+                  $(this).parent(".fen").children(".show").fadeIn();
+                  $(this).parent(".fen").children(".show").css("display","block");
+               }) ;
+            });
 	    </script>
 	
 	
@@ -72,21 +86,36 @@
         </div>
         
         <div class="container">
-            <div class="row" style="padding-right: 0px;background-color: #FFFFFF;">
+            
+            <div class="row" >
                <div class="cont" style="margin: 30px auto;">
                    <h3>PRODUCT ADVANTAGE</h3>
                    <p>————— 产品优势 —————</p>
                </div> 
                </div>
-               <div class="row" style="padding-right: 0px;background-color: #FFFFFF;">
-                <div class="col-sm-3 fen pro-img" ></div>
-                <div class="col-sm-3 fen1 pro-img"></div> 
-                <div class="col-sm-3 fen2 pro-img"></div> 
-                <div class="col-sm-3 fen3 pro-img"></div>
+               <div class="row" style="width:110%; margin-left: -5%;">
+                <div class="col-2.5 fen " >
+                    <img class="show" src="images/index/lan.png">
+                    <img class="hidden" src="images/index/lan1.png">
+                    </div>
+                <div class="col-2.5 fen">
+                    <img class="show" src="images/index/renzheng.png">
+                    <img class="hidden" src="images/index/renzheng1.png">
+                </div> 
+                <div class="col-2.5 fen">
+                    <img class="show" src="images/index/cailiao.png">
+                    <img class="hidden" src="images/index/cailiao1.png">
+                </div> 
+                <div class="col-2.5 fen">
+                    <img class="show" src="images/index/gao.png">
+                    <img class="hidden" src="images/index/gao1.png">
+                </div>
               
                </div>
-             
-        <div class="art1 row" style="background-color: #FFFFFF;background-color: #FFFFFF;">
+         </div>
+          <div class="mid"> 
+          <div class="container">
+        <div class="art1 row" style="padding-right: 0px;">
                    <div class=" col-sm-7 art_1" style="padding-left: 0px;">
                        <img src="images/index/yida.jpg" class="img-fluid">
                    </div>
@@ -108,11 +137,7 @@
                 </div>
                </div> 
                 
-                
-         
-        
-        
-        <div class="art1 row" style="padding-right: 0px;background-color: #FFFFFF;">
+        <div class="art1 row" style="padding-right: 0px;">
               <div class="col-sm-5 art_2">
                   <div class="iw">
                       <div class="ii1">
@@ -137,7 +162,7 @@
         </div>
         
         
-        <div class="art1 row"  style="padding-right: 0px;background-color: #FFFFFF;">
+        <div class="art1 row"  style="padding-right: 0px;">
                    <div class=" col-sm-7 art_1"  style="padding-left: 0px;">
                        <img src="images/index/yida2.jpg" class="img-fluid">
                    </div>
@@ -163,7 +188,7 @@
              </div>
         
         
-         <div class="art2 row" style="padding-right: 0px;background-color: #FFFFFF;">
+         <div class="art2 row" style="padding-right: 0px;">
               <div class="col-sm-5 art_2">
                   
                   <div class="iw">
@@ -189,7 +214,7 @@
        
         </div>
         
-        
+        </div> 
         
         
         

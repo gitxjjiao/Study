@@ -2,60 +2,19 @@
     margin:0px;
     padding:0px;
     }
-body{
-    
-   /* background-color:#DADADA; */
-}
+
 .cont{
     
     text-align: center;
     margin-top: 40px;
 }
 .fen{
-   
-    background-image: url(images/index/lan.png);
+  margin:auto;
 }
+.fen .hidden{
+   display: none;
+} 
 
-
-
-.fen:hover{
-    background-image: url(images/index/lan1.png); 
-}
-
-
-
-.fen1{
-    
-    background-image: url(images/index/renzheng.png);
-}
-.fen1:hover{
-    background-image: url(images/index/renzheng1.png); 
-}
-
-
-
-.fen2{
-   
-    background-image: url(images/index/cailiao.png);
-}
-.fen2:hover{
-    background-image: url(images/index/cailiao1.png); 
-}
-
-
-.fen3{
-     
-    background-image: url(images/index/gao.png);
-}
-.fen3:hover{
-    background-image: url(images/index/gao1.png); 
-}
-.pro-img{
-    width: 100%;
-   height: 190px;
-   background-repeat: no-repeat; 
-   background-position: center;
-}
 .ii1 img{
     float: left;
     padding-right: 20px;" 
@@ -93,12 +52,22 @@ body{
 }
 
 .iw {
+    margin-top: 15px;
     border-bottom: 1px solid #CCCCCC;
 }
+.mid{
+  padding-top: 10px;
+  padding-bottom: 30px;
+  background-color:#eee;
+    
+}
+
 .art1{
-    padding-top: 30px;
+    margin-top:30px;
+    background-color:#FFFFFF ;
 }
 .art2{
-    padding-top: 30px;
-    padding-bottom: 20px;
+    margin-top: 30px;
+    background-color:#FFFFFF ;
 }
+

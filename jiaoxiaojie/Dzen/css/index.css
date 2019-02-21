@@ -1,0 +1,269 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#myCarousel{
+    width: 100%;
+}
+.change{
+    margin-top: 40px;
+}
+.ig{
+    width: 110px;
+    height:110px;
+    background-color:#F5F7F8;
+    border-radius: 55px;
+    padding-left: 15px;
+    margin: auto;
+}
+.ig:hover{
+    background-color: #0099CC;
+}
+
+.ig i{
+    font-size:60px;
+    color: #0069D9;
+    margin-top: 23px;"
+    
+}
+.ig i:hover{
+    color: #FFFFFF;
+}
+.ign{
+   
+}
+.ign h3{
+    
+    text-align: center;
+}
+.ign p{
+     
+    text-align: center;
+}
+
+
+.blu{
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 20px;
+}
+.gra{
+   color:#e1e9e9;
+}
+.select{
+    padding-top: 40px;
+    
+}
+.pro{
+    margin-top: 40px;
+}
+.pro .tit{
+    font-size: 18px;
+    
+}
+.pro .titl{
+    
+     font-size: 18px;
+float: right;
+margin-right: 30px;
+}
+
+
+.pho ul{
+    margin:0px auto 30px auto;
+    text-align: center;
+    font-size: 0px;
+}
+.pho ul li{
+    list-style: none;
+   display: inline-block;  
+    text-align: center;
+    border:1px solid #e1e9e9;
+}
+.pho ul li a{
+    display: block;
+    text-decoration: none;
+    color:#939fa6;
+    font-size: 16px;
+    margin: 10px 15px 10px 15px;
+}
+.photo{
+    width: 100%;
+    height:auto;
+   padding-bottom: 15px;
+  
+}
+
+.photo img{
+   width: 100%;
+   height:auto;
+}
+.p1{
+    padding:0px 0px 5px 8px;
+}
+
+
+
+.yan{
+   background-color:#000000;
+   height:auto;
+   text-align: center;
+   padding-top: 100px;
+   padding-bottom: 50px;
+}
+.people{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.people .ima:hover{
+      opacity: 0.3;
+}
+.people .jpeo{
+  font-size: 20px;
+  color: #000000;
+}
+.people .jpeop{
+    color:#BEC6CA;
+}
+.people .jpeopl{
+    color:#BEC6CA;
+}
+
+
+.cont{
+    margin: 30px auto;
+    text-align: center;
+}
+.cont h3{
+    font-size: 36px;
+    font-weight: 300;
+}
+.cont p{
+    color: #56b9ff;
+    font-weight: bold;
+}
+.art{
+    color: #BEC6CA;
+    text-align: center;
+}
+
+.img{
+    float: left;
+    padding-right: 30px;
+}
+
+.nei{
+    margin-top: 20px;
+}
+.nei a{
+    text-decoration: none;
+    color:#040505;
+    font-size:20px;
+}
+.nei p{
+    width: 100%;
+    color: #BEC6CA;
+    padding-top: 20px;
+}
+.article1{
+    padding-left: 50px;
+    
+}
+.article2{
+    padding-right: 50px;
+}
+
+.posts img{
+     float: left;
+     width: 50px;
+     height: 50px;
+     margin-top: 5px;
+    
+}
+
+.posts1{
+     margin-left: 65px;
+    
+}
+.posts1 a{
+    text-decoration: none;
+    color: darkgray;
+}
+.posts1 p{
+   color: darkgray;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.stay1{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: rgba(36, 46, 53,0.7);
+    float: left;
+}
+.glyphicon{
+    color: darkgray;
+    margin-left: 9px;
+    margin-top:8px;
+}
+.stay{
+    margin-bottom: 30px;
+}
+.stay a{
+    color:darkgray;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.stay p{
+    color:darkgray;
+    margin-left: 50px;
+}
+.foot4 h3{
+    color: #FFFFFF; 
+}
+.photos a{
+    display: inline-block;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.sp{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.sp .rea{
+   color: #FFFFFF;
+   font-size: 32px;
+}
+.sp .read{
+    color: #FFFFFF;
+   
+}
+.buy{
+    width:150px;
+    height: 50px;
+    text-align: center;
+    background-color: #FFFFFF;
+    margin: 45px 0px 45px 0px;
+    border-radius: 3px;
+}
+.buy .buya{
+   
+    display:inline-block;
+    line-height: 45px;
+    text-decoration: none;
+    color:#000000; 
+    font-size: 20px;
+    font-weight: 300;
+}
+.unde{
+    background-color: #000000;
+   height: 90px;
+}
+.unde p{
+    font-size: 10px;
+    color: darkgray;
+    line-height: 90px;
+    margin-left: 40px;
+}
