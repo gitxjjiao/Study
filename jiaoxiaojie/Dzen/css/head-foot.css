@@ -54,6 +54,13 @@ header{
      margin-top: 5px;
     
 }
+.photos img{
+    margin-left: 8px;
+    margin-top: 10px;
+}
+.photos img:hover{
+    opacity: 0.6;
+}
 
 .posts1{
      margin-left: 65px;
@@ -112,4 +119,19 @@ footer{
     margin-right: 0px;
     margin-left: 0px;
     background-color: #182127;
+}
+.bei{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 30px;
+    float: right;
+    background-color:rgba(100,100,100,0.4);
+}
+.bei i{
+    color: #BEC6CA;
+    margin:10px 5px 5px 10px;
+}
+.bei:hover i{
+    color: #FFFFFF;
 }

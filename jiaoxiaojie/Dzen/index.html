@@ -6,11 +6,28 @@
 		<link rel="stylesheet" href="//cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 	    <script src="//cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 	    <script src="//cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/head-foot.css">
         <script src="js/index.js"></script>
         <title>Dzen</title>
-        
+        <script>
+            $(document).ready(function(){
+            $(".plus").click(function(){
+                $(".minus").css("display","block");
+                $(".plus").css("display","none");
+                $(".panel-body").slideToggle("slow");
+            });
+            
+            $(".minus").click(function(){
+                $(".minus").css("display","none");
+                $(".plus").css("display","block");
+                $(".panel-body").slideToggle("slow"); 
+            });
+            
+            
+            });
+        </script>
 	</head>
 	<body>
         <header>
@@ -20,13 +37,13 @@
                     <div class="col-4 h-logo"><a href=""><img src="images/logo.png"></a></div>
                     <nav > 
                         <div class="col-1"></div>
-                        <div class="col-6 navb">
+                        <div class="col-6 navb ">
                             <ul class="nav" >
-                                <li class="nav-item"><a href="">Home</a></li>
-                                <li class="nav-item"><a href="">Services</a></li>
-                                <li class="nav-item"><a href="">About us</a></li>
+                                <li class="nav-item"><a href="index.html">Home</a></li>
+                                <li class="nav-item"><a href="services.html">Services</a></li>
+                                <li class="nav-item"><a href="about us.html">About us</a></li>
                               <li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				<a href="Portfolio.html" class="dropdown-toggle">
 					Portfolio
 					<b class="caret"></b>
 				</a>
@@ -43,7 +60,7 @@
             
             
              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <a href="Blog.html" class="dropdown-toggle">
                  Blog
                  <b class="caret"></b>
                 	</a>
@@ -57,7 +74,7 @@
                                	</ul>
                                </li>
                                 <li class="dropdown">
-                                	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                	<a href="Features.html" class="dropdown-toggle">
                                 		Features
                                 		<b class="caret"></b>
                                 	</a>
@@ -72,7 +89,7 @@
                                 
                                 
                                 
-                                <li class="nav-item"><a href="">Contact</a></li>
+                                <li class="nav-item"><a href="contact.html">Contact</a></li>
                            </ul>   
                         </div>
                     </nav>
@@ -84,6 +101,14 @@
        
             
         </header>
+      
+      
+      
+      
+      
+      
+      
+      
       
    <div class="container" style="width: 100%;height: auto;">
             <div class="row">
@@ -198,6 +223,8 @@
 				   href="#collapseOne">
 					Who are you?
 				</a>
+                <i class="plus glyphicon glyphicon-plus" style="margin-top: 0px;"></i>
+                <i class="minus glyphicon glyphicon-minus" style="margin-top: 0px;"></i>
 			</h4>
 		</div>
 		<div id="collapseOne" class="panel-collapse collapse in">
@@ -219,6 +246,8 @@
 				   href="#collapseTwo">
 					Our mission
 				</a>
+               <i class="plus glyphicon glyphicon-plus" style="margin-top: 0px;"></i>
+               <i class="minus glyphicon glyphicon-minus" style="margin-top: 0px;"></i>
 			</h4>
 		</div>
 		<div id="collapseTwo" class="panel-collapse collapse">
@@ -240,6 +269,8 @@
 				   href="#collapseThree">
 					Our skills
 				</a>
+                <i class="plus glyphicon glyphicon-plus" style="margin-top: 0px;"></i>
+                <i class="minus glyphicon glyphicon-minus" style="margin-top: 0px;"></i>
 			</h4>
 		</div>
 		<div id="collapseThree" class="panel-collapse collapse">
@@ -266,35 +297,34 @@
        <div class="pro">
            <span class="tit">Marketing</span><span class="titl">80%</span>
           <div class="progress">
-	<div class="progress-bar" role="progressbar" aria-valuenow="60"
+	<div  class="por1 progress-bar" role="progressbar" aria-valuenow="60"
 		 aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-		<!-- <span class="sr-only">40% 完成</span> -->
 	</div>
 </div>
  <span class="tit">Management</span><span class="titl">90%</span>
 <div class="progress">
-	<div class="progress-bar" role="progressbar" aria-valuenow="60"
+	<div class="por2 progress-bar" role="progressbar" aria-valuenow="60"
 		 aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
 	</div>
 </div>
 
 <span class="tit">Design</span><span class="titl">68%</span>
 <div class="progress">
-	<div class="progress-bar" role="progressbar" aria-valuenow="60"
+	<div class="por3 progress-bar" role="progressbar" aria-valuenow="60"
 		 aria-valuemin="0" aria-valuemax="100" style="width: 68%;">
 	</div>
 </div>
 
 <span class="tit">Great ideas</span><span class="titl">100%</span>
 <div class="progress">
-	<div class="progress-bar" role="progressbar" aria-valuenow="60"
+	<div class="por4 progress-bar" role="progressbar" aria-valuenow="60"
 		 aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
 	</div>
 </div>
 
 <span class="tit">Awesomeness</span><span class="titl">100%</span>
 <div class="progress">
-	<div class="progress-bar" role="progressbar" aria-valuenow="60"
+	<div class="por5 progress-bar" role="progressbar" aria-valuenow="60"
 		 aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
 	</div>
 </div>
@@ -333,18 +363,55 @@
                 </ul>
               </div>
           <div class="photo">
-              <div class="col-sm-3 p1" id="ui1"><img  src="images/item7.jpg"></div>
-              <!-- <div class="hid">Mountain Paradise</div> -->
-              <div class="col-sm-3 p1" id="ui2"><img  src="images/item1.jpg"></div>
-              <div class="col-sm-3 p1" id="ui3"><img  src="images/item5.jpg"></div>
-              <div class="col-sm-3 p1" id="ui4"><img  src="images/item10.jpg"></div>
- 
-          <div class="col-sm-3 p1" id="ui5"><img src="images/item7.jpg"></div>
-          <div class="col-sm-3 p1" id="ui6"><img src="images/item3.jpg"></div>
-          <div class="col-sm-3 p1" id="ui7"><img src="images/item8.jpg"></div>
-          <div class="col-sm-3 p1" id="ui8"><img src="images/item.jpg"></div>
+              <div class="col-sm-3 p1" id="ui1"><a href=""><img  src="images/item7.jpg"></a></div>
+              <div class="col-sm-3 p1" id="ui2"><a href=""><img  src="images/item1.jpg"></a></div>
+              <div class="col-sm-3 p1" id="ui3"><a href=""><img  src="images/item5.jpg"></a></div>
+              <div class="col-sm-3 p1" id="ui4"><a href=""><img  src="images/item10.jpg"></a></div>
+          <div class="col-sm-3 p1" id="ui5"><a href=""><img src="images/item7.jpg"></a></div>
+          <div class="col-sm-3 p1" id="ui6"><a href=""><img src="images/item3.jpg"></a></div>
+          <div class="col-sm-3 p1" id="ui7"><a href=""><img src="images/item8.jpg"></a></div>
+          <div class="col-sm-3 p1" id="ui8"><a href=""><img src="images/item.jpg"></a></div>
           </div>
-
+         <div class="ide">
+             <div class="col-sm-3 p1" id="ui1"><a href=""><img  src="images/item7.jpg"></a></div>
+             <div class="col-sm-3 p1" id="ui2"><a href=""><img  src="images/item1.jpg"></a></div>
+             <div class="col-sm-3 p1" id="ui3"><a href=""><img  src="images/item5.jpg"></a></div>
+          <div class="col-sm-3 p1" id="ui7"><a href=""><img src="images/item8.jpg"></a></div>
+         </div> 
+          
+           <div class="ui">
+               <div class="col-sm-3 p1" id="ui6"><a href=""><img src="images/item3.jpg"></a></div>
+              <div class="col-sm-3 p1" id="ui7"><a href=""><img src="images/item8.jpg"></a></div>
+              <div class="col-sm-3 p1" id="ui8"><a href=""><img src="images/item.jpg"></a></div>
+          <div class="col-sm-3 p1" id="ui4"><a href=""><img  src="images/item10.jpg"></a></div>
+          </div> 
+          
+          
+          <div class="il">
+               <div class="col-sm-3 p1" id="ui3"><a href=""><img  src="images/item5.jpg"></a></div>
+                   <div class="col-sm-3 p1" id="ui4"><a href=""><img  src="images/item10.jpg"></a></div>
+               <div class="col-sm-3 p1" id="ui5"><a href=""><img src="images/item7.jpg"></a></div>
+           <div class="col-sm-3 p1" id="ui2"><a href=""><img  src="images/item1.jpg"></a></div>
+          </div> 
+          
+          
+          <div class="br">
+              <div class="col-sm-3 p1" id="ui6"><a href=""><img src="images/item3.jpg"></a></div>
+              <div class="col-sm-3 p1" id="ui7"><a href=""><img src="images/item8.jpg"></a></div>
+          <div class="col-sm-3 p1" id="ui2"><a href=""><img  src="images/item1.jpg"></a></div>
+          <div class="col-sm-3 p1" id="ui3"><a href=""><img  src="images/item5.jpg"></a></div>
+          </div> 
+          
+          
+          
+          
+          
+          
+          
+         <div class="com">
+             <a href="">Complete portfolio</a>
+             
+         </div>
         </div>
       </div>
  
@@ -603,10 +670,16 @@ Very easy to customize. Fully layered PSD with multi-purpose features. You can b
         <div class="unde">
              <div class="container">
                 <div class="row">
-               <p>
+               <p class="col-sm-7">
         © 2013, Dzen  inc., all rights reserved  |  Designed by Toxicus, developed by 
         </p>
         
+
+           <div class="bei"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+           <div class="bei"><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
+           <div class="bei"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+           <div class="bei"><i class="fa fa-ils" aria-hidden="true"></i></div>
+
         </div>
         </div>
            </div>

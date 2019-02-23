@@ -45,6 +45,21 @@
        
       
     });
+    
+    $(".plus").click(function(){
+        $(".plus").css("display","none");
+        $(".minus").css("display","block");
+        $(".panel-body").slideToggle("slow");
+    });
+    
+    $(".minus").click(function(){
+        $(".minus").css("display","none");
+        $(".plus").css("display","block");
+        $(".panel-body").slideToggle("slow"); 
+    });
+    
+    
+    
 }); 
 
             
@@ -62,11 +77,11 @@
                         <div class="col-1"></div>
                         <div class="col-6 navb">
                             <ul class="nav" >
-                                <li class="nav-item"><a href="">Home</a></li>
-                                <li class="nav-item"><a href="">Services</a></li>
-                                <li class="nav-item"><a href="">About us</a></li>
+                                <li class="nav-item"><a href="index.html">Home</a></li>
+                                <li class="nav-item"><a href="services.html">Services</a></li>
+                                <li class="nav-item"><a href="about us.html">About us</a></li>
                               <li class="dropdown">
-        		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        		<a href="Portfolio.html" class="dropdown-toggle">
         			Portfolio
         			<b class="caret"></b>
         		</a>
@@ -83,7 +98,7 @@
             
             
              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <a href="Blog.html" class="dropdown-toggle">
                  Blog
                  <b class="caret"></b>
                 	</a>
@@ -97,7 +112,7 @@
                                	</ul>
                                </li>
                                 <li class="dropdown">
-                                	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                	<a href="Features.html" class="dropdown-toggle" >
                                 		Features
                                 		<b class="caret"></b>
                                 	</a>
@@ -112,7 +127,7 @@
                                 
                                 
                                 
-                                <li class="nav-item"><a href="">Contact</a></li>
+                                <li class="nav-item"><a href="contact.html">Contact</a></li>
                            </ul>   
                         </div>
                     </nav>
@@ -126,7 +141,7 @@
             <div class="row">
             <div class="col-sm-1"></div>
             <h1 class="col-sm-8">Shortcodes</h1>
-            <span class="col-sm-3"><a href="">Home</a><i class="glyphicon glyphicon-chevron-right"></i>Shortcodes</span>
+            <span class="col-sm-3"><a href="index.html">Home</a><i class="glyphicon glyphicon-chevron-right"></i>Shortcodes</span>
            </div> 
         </div>
         
@@ -261,6 +276,8 @@
         				   href="#collapseOne">
         					Accordion Title One
         				</a>
+                        <i class="plus glyphicon glyphicon-plus" style="margin-top: 0px;"></i>
+                        <i class="minus glyphicon glyphicon-minus" style="margin-top: 0px;"></i>
         			</h4>
         		</div>
         		<div id="collapseOne" class="panel-collapse collapse in">
@@ -282,6 +299,8 @@
         				   href="#collapseTwo">
         					Accordion Title Two
         				</a>
+                        <i class="plus glyphicon glyphicon-plus" style="margin-top: 0px;"></i>
+                        <i class="minus glyphicon glyphicon-minus" style="margin-top: 0px;"></i>
         			</h4>
         		</div>
         		<div id="collapseTwo" class="panel-collapse collapse">
@@ -303,6 +322,8 @@
         				   href="#collapseThree">
         					Accordion Title Three
         				</a>
+                        <i class="plus glyphicon glyphicon-plus" style="margin-top: 0px;"></i>
+                        <i class="minus glyphicon glyphicon-minus" style="margin-top: 0px;"></i>
         			</h4>
         		</div>
         		<div id="collapseThree" class="panel-collapse collapse">
@@ -659,27 +680,27 @@
           <div class="feat-jdtw"><p>Marketing</p><span>80%</span></div>
          <div style="clear:both;"></div>
          <div class="progress">
-           <div class="progress-bar bg-success d1" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+           <div class="por progress-bar bg-success d1" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
          </div>
          <div class="feat-jdtw"><p >Management</p><span>90%</span></div>
          <div style="clear:both;"></div>
          <div class="progress">
-           <div class="progress-bar bg-info d2" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+           <div class="por1 progress-bar bg-info d2" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
          </div>
          <div class="feat-jdtw"><p>Design</p><span>68%</span></div>
          <div style="clear:both;"></div>
          <div class="progress">
-           <div class="progress-bar bg-warning d3" role="progressbar" style="width: 68%" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+           <div class="pro2 progress-bar bg-warning d3" role="progressbar" style="width: 68%" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
          </div>
          <div class="feat-jdtw"><p>Great ideas</p><span>100%</span></div>
          <div style="clear:both;"></div>
          <div class="progress">
-           <div class="progress-bar bg-primary d4" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+           <div class="pro3 progress-bar bg-primary d4" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
          </div>
          <div class="feat-jdtw"><p>Awesomeness</p><span>100%</span></div>
          <div style="clear:both;"></div>
          <div class="progress">
-           <div class="progress-bar bg-danger d5" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+           <div class="pro4 progress-bar bg-danger d5" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
          </div>
        
        
@@ -841,15 +862,20 @@
         </footer>
          
          
-         <div class="unde">
-             <div class="container">
-                <div class="row">
-               <p>
-        © 2013, Dzen  inc., all rights reserved  |  Designed by Toxicus, developed by 
-        </p>
-        
-        </div>
-        </div>
-           </div>
+                 <div class="unde">
+              <div class="container">
+                 <div class="row">
+                <p class="col-sm-8">
+         © 2013, Dzen  inc., all rights reserved  |  Designed by Toxicus, developed by 
+         </p>
+         
+            <div class="bei"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+            <div class="bei"><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
+            <div class="bei"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+            <div class="bei"><i class="fa fa-ils" aria-hidden="true"></i></div>
+         </div>
+         </div>
+            </div>
+         
 	</body>
 </html>
