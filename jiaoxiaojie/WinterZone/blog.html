@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1"> 
+				 <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+				 <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+				 <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+		  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+				 <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+				<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="dist/css/swiper.min.css">
+		<link rel="stylesheet" href="css/index.css">
+		 <link rel="stylesheet" href="css/contact.css">
+         <link rel="stylesheet" href="css/blog.css">
+         <script src="js/index.js"></script>
+		 <style>
+		     .nav-link{
+		         color: #FFFFFF;
+		         font-weight: bold;
+		         font-size: 15px;
+		     }
+		     .nav-link:hover{
+		        color: #FFFFFF;
+		        text-decoration: none;
+		     }
+		     #yi{
+		         width:20%;
+		         height: 5px;
+		         background-color: #FFFFFF;
+		         transition:width 200ms;
+		     }
+		     .nav-link:hover #yi{
+		         width: 100%;
+		     }
+		     
+		     .nav-item{
+		         padding: 20px;
+		     }
+		     .nav-item:hover .select{
+		         display: block;
+		     }
+		     .nav-item:hover .select1{
+		         display: block;
+		     }
+		     .navbar-toggler{
+		         color: #FFFFFF;
+		         margin-left: 80%;
+		     }
+		     .navbar{
+		         margin-bottom: 0px;
+		     }
+		 </style>
+	</head>
+	<body>
+         <nav class="navbar navbar-expand-md" style="background-color: #5C9CEB;">
+                    <div class="container">
+                        <div class="row"> 
+               <div class="col-sm-2 logo "><img src="images/logowinterzone.png" class="img-fluid"></div>
+               
+               
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+          </button>
+          <div class="col-sm-7 collapse navbar-collapse " id="collapsibleNavbar" style="text-align: center;">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">首页<div id="yi" class="d-none d-sm-none d-md-block d-lg-block"></div>
+                </a>
+                 
+                
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">关于我们<div id="yi" class="d-none d-sm-none d-md-block d-lg-block"></div></a>
+                <ul class="select">
+                    
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">精选活动<div class="d-none d-sm-none d-md-block d-lg-block" id="yi"></div>
+                </a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="listings.html">清峰商城<div id="yi" class="d-none d-sm-none d-md-block d-lg-block"></div>
+                
+                </a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">公众号<div id="yi" class="d-none d-sm-none d-md-block d-lg-block"></div></a>
+                <ul class="select1">
+                   <div class="row">
+                       <div class="col-sm-6 hj">
+                          <img src="images/erwei1.jpg" class="img-fluid">
+                          <p>扫码关注公众号</p>
+                       </div>
+                       <div class="col-sm-6 hj">
+                           <img src="images/erwei1.jpg" class="img-fluid">
+                           <p>扫码进入小程序</p>
+                       </div>
+                      
+                   </div>
+                </ul> 
+              </li>
+               
+               
+               
+            </ul>
+          </div>  
+             <div class="col-sm-3 search d-none d-sm-none d-md-block d-lg-block">
+                 <div class="sea">
+                 <a id="lan9" href=""><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
+                   <a id="lan0" href="javascript:void(0);"><i  class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+                 </div>
+                 <div class="lan">
+                     <div id="close">
+                     	<i class="fa fa-window-close fa-2x"></i>
+                     </div>
+                     <div class="lan1">
+                         <h2>Winter Zone</h2>
+                         <h4>Contact information</h4>
+                         <span>——————————</span>
+                         <li><i class="fa fa-phone"></i>(+40)74 0920 2288</li>
+                         <li><i class="fa fa-envelope-o"></i>office@example.com</li>
+                         <li><i class="fa fa-map-marker"></i>New York 11673 Collins</li>
+                         
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     </div>
+                     
+                     <div class="lan2">
+                         <h4>Post thumbnails slider</h4>
+                         <span>——————————</span>
+                         <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/blog-post-1-min-700x450.jpg" class="img-fluid">
+                </div>
+                <div class="swiper-slide"><img src="images/blog-post-2-min-700x450.jpg" class="img-fluid"></div>
+                <div class="swiper-slide"> <img src="images/blog-post-6-min-700x450.jpg" class="img-fluid"></div>
+                <div class="swiper-slide"> <img src="images/blog-post-8-min-700x450.jpg" class="img-fluid"></div>
+                
+            </div>
+           
+            <div class="swiper-button-prev" style="width: 26px;height: 24px;background-color:rgba(0,0,0,0.7);"></div>
+           <div class="swiper-button-next"  style="width: 26px;height: 24px;background-color:rgba(0,0,0,0.7);"></div>
+        </div>
+                  </div>
+                  <div class="lan3">
+                      <h4>Tags</h4>
+                      <span>——————————</span>
+                      <div class="lan3-1">
+                                            <a href="#">activity</a>
+                                            <a href="#">chalet</a>
+                                            <a href="#">engine care</a>
+                                            <a href="#">engineering</a>
+                                            <a href="#">equipment</a>
+                                            <a href="#">mount</a>
+                                            <a href="#">snow</a>
+                                            <a href="#">travel</a>
+                                            <a href="#">winter</a>
+                                            <a href="#">winter season</a>
+                                            </div>
+                     
+                 </div>
+             </div>
+        </div>
+         </div>
+        </nav>
+        
+         <div class="lists">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 list">
+                    <h3>BLOG</h3>
+                </div>
+                <div class="col-sm-6 list1">
+                    <a href="">首页</a><span> / BLOG</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        
+        <div class="bigb">
+            <div class="container">
+                <div class="row">
+                    <h2 class="df">
+                        All Blog Posts
+                    
+                    </h2>
+                    <div class="col-sm-9 blog-l">
+                        <div class="row">
+                         	<div class="back">
+                        <div class="col-sm-5 img-1">
+                             <div class="imga-1">
+                            <a href="">
+                            <img src="images/blog-post-6-min-650x550.jpg" class="img-fluid">
+                            </a>
+                            <div class="huan"></div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-7 nei-1">
+                            <div class="rig-1">
+                                <i class="fa fa-bookmark fa-2x"></i> 
+                                <a href="">Winter is Coming…</a>
+                            </div>
+                            <div class="rig-2">
+                                <i class="fa fa-calendar"></i>
+                                <a href="">March 13,2016</a>
+                               <i class="fa fa-tag"></i>
+                                <a href="">Sports</a>
+                               <i class="fa fa-user-o"></i>
+                                <a href="">admin</a>
+                               <i class="fa fa-weixin"></i>
+                                 <a href="">1</a>
+                            </div>
+                            <p>Trying to catch up with every new social network? Do you find yourself juggling with copy and images to make sure to share at least a certain number?</p>
+                            <a class="nei-1-a" href="">READE MORE<i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                        
+                        
+                        </div>
+                        </div>
+                        
+                        <div class="row" style="margin-top: 70px;">
+                         	<div class="back">
+                        
+                        <div class="col-sm-7 nei-1">
+                            <div class="rig-1">
+                                <i class="fa fa-bookmark fa-2x"></i> 
+                                <a href="">Great Moments with Family</a>
+                            </div>
+                            <div class="rig-2">
+                                <i class="fa fa-calendar"></i>
+                                <a href="">February 10,2016</a>
+                               <i class="fa fa-tag"></i>
+                                <a href="">Winter activities</a>
+                               <i class="fa fa-user-o"></i>
+                                <a href="">admin</a>
+                               <i class="fa fa-weixin"></i>
+                                 <a href="">2</a>
+                            </div>
+                            <p>Trying to catch up with every new social network? Do you find yourself juggling with copy and images to make sure to share at least a certain number?</p>
+                            <a class="nei-1-a" href="">READE MORE<i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                        <div class="col-sm-5 img-1">
+                             <div class="imga-1">
+                            <a href="">
+                            <img src="images/blog-post-3-min-650x550.jpg" class="img-fluid">
+                            </a>
+                            <div class="huan"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        </div>
+                        </div>
+                        
+                        <div class="row" style="margin-top: 70px;">
+                         	<div class="back">
+                        <div class="col-sm-5 img-1">
+                             <div class="imga-1">
+                            <a href="">
+                            <img src="images/blog-post-7-min-650x550.jpg" class="img-fluid">
+                            </a>
+                            <div class="huan"></div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-7 nei-1">
+                            <div class="rig-1">
+                                <i class="fa fa-bookmark fa-2x"></i> 
+                                <a href="">Great Moments with Family</a>
+                            </div>
+                            <div class="rig-2">
+                                <i class="fa fa-calendar"></i>
+                                <a href="">February 10,2016</a>
+                               <i class="fa fa-tag"></i>
+                                <a href="">Winter activities</a>
+                               <i class="fa fa-user-o"></i>
+                                <a href="">admin</a>
+                               <i class="fa fa-weixin"></i>
+                                 <a href="">2</a>
+                            </div>
+                            <p>Trying to catch up with every new social network? Do you find yourself juggling with copy and images to make sure to share at least a certain number?</p>
+                            <a class="nei-1-a" href="">READE MORE<i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                        </div>
+                        </div>
+                        
+                        <div class="row" style="margin-top: 70px;">
+                         	<div class="back">
+                        
+                        <div class="col-sm-7 nei-1">
+                            <div class="rig-1">
+                                <i class="fa fa-bookmark fa-2x"></i> 
+                                <a href="">Great Moments with Family</a>
+                            </div>
+                            <div class="rig-2">
+                                <i class="fa fa-calendar"></i>
+                                <a href="">February 10,2016</a>
+                               <i class="fa fa-tag"></i>
+                                <a href="">Winter activities</a>
+                               <i class="fa fa-user-o"></i>
+                                <a href="">admin</a>
+                               <i class="fa fa-weixin"></i>
+                                 <a href="">2</a>
+                            </div>
+                            <p>Trying to catch up with every new social network? Do you find yourself juggling with copy and images to make sure to share at least a certain number?</p>
+                            <a class="nei-1-a" href="">READE MORE<i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                        <div class="col-sm-5 img-1">
+                             <div class="imga-1">
+                            <a href="">
+                            <img src="images/blog-post-2-min-650x550.jpg" class="img-fluid">
+                            </a>
+                            <div class="huan"></div>
+                            </div>
+                            
+                        </div>
+                        </div>
+                        </div>
+                        
+                          <div class="row" style="margin-top: 70px;">
+                         	<div class="back">
+                         <div class="col-sm-5 img-1">
+                             <div class="imga-1">
+                            <a href="">
+                            <img src="images/blog-post-1-min-650x550.jpg" class="img-fluid">
+                            </a>
+                            <div class="huan"></div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-7 nei-1">
+                            <div class="rig-1">
+                                <i class="fa fa-bookmark fa-2x"></i> 
+                                <a href="">Great Moments with Family</a>
+                            </div>
+                            <div class="rig-2">
+                                <i class="fa fa-calendar"></i>
+                                <a href="">February 10,2016</a>
+                               <i class="fa fa-tag"></i>
+                                <a href="">Winter activities</a>
+                               <i class="fa fa-user-o"></i>
+                                <a href="">admin</a>
+                               <i class="fa fa-weixin"></i>
+                                 <a href="">2</a>
+                            </div>
+                            <p>Trying to catch up with every new social network? Do you find yourself juggling with copy and images to make sure to share at least a certain number?</p>
+                            <a class="nei-1-a" href="">READE MORE<i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                        </div>
+                        </div>
+                        
+                        
+                         <div class="row" style="margin-top: 70px;">
+                         	<div class="back">
+                        
+                        <div class="col-sm-7 nei-1">
+                            <div class="rig-1">
+                                <i class="fa fa-bookmark fa-2x"></i> 
+                                <a href="">Great Moments with Family</a>
+                            </div>
+                            <div class="rig-2">
+                                <i class="fa fa-calendar"></i>
+                                <a href="">February 10,2016</a>
+                               <i class="fa fa-tag"></i>
+                                <a href="">Winter activities</a>
+                               <i class="fa fa-user-o"></i>
+                                <a href="">admin</a>
+                               <i class="fa fa-weixin"></i>
+                                 <a href="">2</a>
+                            </div>
+                            <p>Trying to catch up with every new social network? Do you find yourself juggling with copy and images to make sure to share at least a certain number?</p>
+                            <a class="nei-1-a" href="">READE MORE<i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                        <div class="col-sm-5 img-1">
+                             <div class="imga-1">
+                            <a href="">
+                            <img src="images/blog-post-8-min-650x550.jpg" class="img-fluid">
+                            </a>
+                            <div class="huan"></div>
+                            </div>
+                            
+                        </div>
+                        </div>
+                        </div>
+                        
+                        <div class="row" style="margin-top: 70px;">
+                         	<div class="back">
+                         <div class="col-sm-5 img-1">
+                             <div class="imga-1">
+                            <a href="">
+                            <img src="images/shutterstock_217200307-min-650x550.jpg" class="img-fluid">
+                            </a>
+                            <div class="huan"></div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-7 nei-1">
+                            <div class="rig-1">
+                                <i class="fa fa-bookmark fa-2x"></i> 
+                                <a href="">Great Moments with Family</a>
+                            </div>
+                            <div class="rig-2">
+                                <i class="fa fa-calendar"></i>
+                                <a href="">February 10,2016</a>
+                               <i class="fa fa-tag"></i>
+                                <a href="">Winter activities</a>
+                               <i class="fa fa-user-o"></i>
+                                <a href="">admin</a>
+                               <i class="fa fa-weixin"></i>
+                                 <a href="">2</a>
+                            </div>
+                            <p>Trying to catch up with every new social network? Do you find yourself juggling with copy and images to make sure to share at least a certain number?</p>
+                            <a class="nei-1-a" href="">READE MORE<i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                        </div>
+                        </div>
+                        
+                            <div class="row" style="margin-top: 70px;">
+                         	<div class="back">
+                        
+                        <div class="col-sm-7 nei-1">
+                            <div class="rig-1">
+                                <i class="fa fa-bookmark fa-2x"></i> 
+                                <a href="">Great Moments with Family</a>
+                            </div>
+                            <div class="rig-2">
+                                <i class="fa fa-calendar"></i>
+                                <a href="">February 10,2016</a>
+                               <i class="fa fa-tag"></i>
+                                <a href="">Winter activities</a>
+                               <i class="fa fa-user-o"></i>
+                                <a href="">admin</a>
+                               <i class="fa fa-weixin"></i>
+                                 <a href="">2</a>
+                            </div>
+                            <p>Trying to catch up with every new social network? Do you find yourself juggling with copy and images to make sure to share at least a certain number?</p>
+                            <a class="nei-1-a" href="">READE MORE<i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                        <div class="col-sm-5 img-1">
+                             <div class="imga-1">
+                            <a href="">
+                            <img src="images/blog-post-13-min-650x550.jpg" class="img-fluid">
+                            </a>
+                            <div class="huan"></div>
+                            </div>
+                            
+                        </div>
+                        </div>
+                        </div>
+                        
+                       <div class="fenye">
+                           <a class="three" href="">1</a>
+                           <a class="one" href="">2</a>
+                           <a class="one" href="">3</a>
+                           <a class="two" href="">>></a>
+                           
+                       </div>
+                        
+                    </div>
+                     <div class="col-sm-3 blog-r">
+                         <div class="search-1">
+                             <input type="text" name="search" placeholder="Search">
+                             <button type="button">Search</button>
+                         </div>
+                         <div class="blog-nei1">
+                             <h2 class="af">What to do this winter</h2>
+                             <img src="images/winterzone-aboutus-300x206.jpg" />
+                             
+                         </div>
+                         
+                         <div class="blog-nei2">
+                             <h2 class="af">Recent posts</h2>
+                             <li>
+                                 <div class="blog-img1">
+                           <img src="images/blog-post-2-min-100x100.jpg" class="img-fluid">
+                                     <i class="fa fa-plus fa-2x"></i> 
+                                 </div>
+                                 <div class="blog-r-a">
+                                     <a href="">Great Service</a>
+                                     <p>February 24, 2016</p>
+                                 </div>
+                             </li>
+                             
+                             
+                              <li>
+                                 <div class="blog-img1">
+                        <img src="images/blog-post-6-min-100x100.jpg" class="img-fluid">
+                                     <i class="fa fa-plus fa-2x"></i> 
+                                 </div>
+                                 <div class="blog-r-a">
+                                     <a href="">Great Service</a>
+                                     <p>February 24, 2016</p>
+                                 </div>
+                             </li>
+                             
+                             
+                             <li>
+                                      <div class="blog-img1">
+                  <img src="images/blog-post-1-min-100x100.jpg" class="img-fluid">
+                                          <i class="fa fa-plus fa-2x"></i> 
+                                      </div>
+                                      <div class="blog-r-a">
+                                          <a href="">Great Service</a>
+                                          <p>February 24, 2016</p>
+                                      </div>
+                                  </li>
+                                  
+                                  
+                                  <li>
+                                           <div class="blog-img1">
+                <img src="images/blog-post-8-min-100x100.jpg" class="img-fluid">
+                                               <i class="fa fa-plus fa-2x"></i> 
+                                           </div>
+                                           <div class="blog-r-a">
+                                               <a href="">Great Service</a>
+                                               <p>February 24, 2016</p>
+                                           </div>
+                                       </li>
+                                       
+                                       
+                                       <li>
+                                                <div class="blog-img1">
+               <img src="images/shutterstock_217200307-min-100x100.jpg" class="img-fluid">
+                                                    <i class="fa fa-plus fa-2x"></i> 
+                                                </div>
+                                                <div class="blog-r-a">
+                                                    <a href="">Great Service</a>
+                                                    <p>February 24, 2016</p>
+                                                </div>
+                                            </li>
+                         </div>
+                         
+                     <div class="blog-nei3">
+                         <h2 class="af">Recent Comments</h2>
+            <li><i class="fa fa-chevron-right"></i>
+            <a href="">Cristian Stan</a>
+            <span>on</span>
+            <a href="">Skis</a></li>
+                         
+           <li><i class="fa fa-chevron-right"></i>
+           <a href="">Cristian Stan</a>
+           <span>on</span>
+           <a href="">Skis</a></li>              
+                         
+           <li><i class="fa fa-chevron-right"></i>
+           <span>Cristian Stan on</span>
+           <a href="">Purchase a Peak Pass</a></li>              
+                         
+            <li><i class="fa fa-chevron-right"></i>
+            <span>Cristian Stan on</span>
+            <a href="">Stowe Ski School</a></li>               
+                         
+            <li><i class="fa fa-chevron-right"></i>
+            <span>Cristian Stan on</span>
+            <a href="">Last Chance to Grab Discounts !</a></li>               
+                         
+                     </div>
+             <div class="blog-nei3">            
+                  <h2 class="af">Posts Slider</h2>       
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+         <div class="swiper-slide"><img src="images/blog-post-1-min-700x450.jpg" class="img-fluid"></div>
+       <div class="swiper-slide"><img src="images/blog-post-2-min-700x450.jpg" class="img-fluid"></div>
+      <div class="swiper-slide"> <img src="images/blog-post-6-min-700x450.jpg" class="img-fluid"></div>
+     <div class="swiper-slide"> <img src="images/blog-post-8-min-700x450.jpg" class="img-fluid"></div>
+                        
+                    </div>
+                    
+                </div>       
+                      </div>  
+                       
+         <div class="blog-nei4">
+                    <h2 class="af">Archives</h2>
+                                      
+                        <li><i class="fa fa-chevron-right"></i>
+                        <a href="">May 2017</a></li>              
+                                      
+                         <li><i class="fa fa-chevron-right"></i>
+                         <a href="">March 2016</a></li>               
+                                      
+                         <li><i class="fa fa-chevron-right"></i>
+                         <a href="">February 2016</a></li> 
+                        
+                        <li><i class="fa fa-chevron-right"></i>
+                        <a href="">January 2016</a></li> 
+                        
+                        
+                        <img src="images/winterzone-services%20(1).jpg" class="img-fluid">
+                    </div>     
+                 
+             <div class="blog-nei5">
+                        <h2 class="af">Experience video</h2>
+                         <div class="vide-1">
+                             <i class="fa fa-file-archive-o fa-3x"></i>
+                             <p>www.youtube.com 的响应时间过长</p>
+                         </div>
+                        </div>        
+                 
+                 <div class="blog-nei6">
+                            <h4>March 2019</h4>
+                            <table class="table-1">
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3"><a id="may" href="">« May</a></td>
+		<td>&nbsp;</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="4">&nbsp;</td><td>1</td><td>2</td><td>3</td>
+	</tr>
+	<tr>
+		<td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+	</tr>
+	<tr>
+		<td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td>
+	</tr>
+	<tr>
+		<td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
+	</tr>
+	<tr>
+		<td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
+	</tr>
+	</tbody>
+	</table>
+    
+    
+    <img src="images/winterzone-full-equipment-1-300x300.jpg" class="img-fluid">
+                            </div> 
+                 
+                 
+                     </div>
+                    
+                    
+                    
+                </div>
+            </div>
+            
+            
+            
+            
+            
+        </div>
+        
+        
+        
+         <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 foo">
+                <li><i class="fa fa-angle-right fa-2x"></i><a href="">TERMS & CONDITIONS</a></li>
+               <li><i class="fa fa-angle-right fa-2x"></i><a href="">CONTACT US</a></li>
+               <li><i class="fa fa-angle-right fa-2x"></i><a href="">LEGAL & POLICY</a></li>         
+                    </div>
+                    <div class="col-sm-3 foo">
+                  <li><i class="fa fa-angle-right fa-2x"></i><a href="">ABOUT US</a></li>
+                 <li><i class="fa fa-angle-right fa-2x"></i><a href="">BLOG POST</a></li>
+            <li><i class="fa fa-angle-right fa-2x"></i><a href="">SERVICES</a></li> 
+                        
+                        
+                    </div>
+                    <div class="col-sm-3 foo">
+                  <li><i class="fa fa-angle-right fa-2x"></i><a href="">ABOUT SERVICE</a></li>
+                 <li><i class="fa fa-angle-right fa-2x"></i><a href="">PRICINGS</a></li>
+                <li><i class="fa fa-angle-right fa-2x"></i><a href="">LATEST NEWS</a></li>    
+                        
+                    </div>
+                    <div class="col-sm-3 foo">
+                      <li><i class="fa fa-phone fa-2x"></i><a href="">ABOUT SERVICE</a></li>
+                     <li><i class="fa fa-envelope-o fa-2x"></i><a href="">PRICINGS</a></li>
+                    <li><i class="fa fa-map-marker fa-2x"></i><a href="">LATEST NEWS</a></li>    
+                            
+                        </div>
+                </div>
+            </div>
+           
+        </footer>
+        
+         <div class="fm">
+            <p>Copyright 2018 by ModelTheme. All Rights Reserved.</p>
+        </div>
+        <script src="dist/js/swiper.min.js"></script>
+        <script>
+            var mySwiper = new Swiper ('.lan2 .swiper-container', {
+                observer:true,//修改swiper自己或子元素时，自动初始化swiper
+                observeParents:true,//修改swiper的父元素时，自动初始化swiper
+                   navigation: {
+                   nextEl: '.swiper-button-next',
+                   prevEl: '.swiper-button-prev',}
+             });
+            var mySwiper = new Swiper ('.blog-nei3 .swiper-container', {
+               autoplay:true,
+                
+            });
+            
+            
+            
+           
+            
+        </script>
+	</body>
+</html>

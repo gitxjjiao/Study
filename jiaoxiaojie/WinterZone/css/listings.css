@@ -1,0 +1,69 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.list h3{
+    font-weight: 700;
+     margin-bottom: 30px;
+     margin-top: 30px;
+}
+.list1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+.list1 a{
+    color: #00008B;
+    
+}
+.lists{
+    width: 100%;
+    border-bottom: 1px solid #EBEBEB;
+}
+.fenye{
+    text-align: center;
+    margin-top: 25px;
+}
+.fenye .three{
+     display:inline-block;
+    padding: 15px 23px 15px 23px;
+    border: 0.5px solid #EBEBEB;
+    margin-right: 15px;
+    font-size: 19px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    background-color:#5C9CEB;
+    transition: all ease 0.6s;
+}
+.fenye .three:hover{
+    text-decoration: none;
+}
+.fenye .one{
+    display:inline-block;
+     padding: 15px 23px 15px 23px;
+    font-size: 19px;
+    margin-right: 15px;
+    color: #000;
+    border: 0.5px solid #EBEBEB;
+     border-radius: 4px;
+     transition: all ease 0.6s;
+}
+.fenye .one:hover{
+    text-decoration: none;
+    background-color:#C82333;
+    color: #FFF;
+}
+.fenye .two{
+    display:inline-block;
+     padding: 15px 20px 15px 20px;
+    font-size: 19px;
+    color: #000;
+     border-radius: 4px;
+    border: 0.5px solid #EBEBEB;
+    transition: all ease 0.6s;
+}
+.fenye .two:hover{
+    text-decoration: none;
+    color: #FFF;
+    background-color:#C82333;
+}

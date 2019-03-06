@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		 <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+		 <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+		 <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+         <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+		 <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+       <link rel="stylesheet" href="dist/css/swiper.min.css">
+       
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js"></script>
+        <script src="js/numplus.js"></script>
+        <style>
+            .nav-link{
+                color: #FFFFFF;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            .nav-link:hover{
+               color: #FFFFFF;
+               text-decoration: none;
+            }
+            #yi{
+                width:20%;
+                height: 5px;
+                background-color: #FFFFFF;
+                transition:width 200ms;
+            }
+            .nav-link:hover #yi{
+                width:100%;
+            }
+            
+            .nav-item{
+                padding: 20px;
+            }
+            .nav-item:hover .select{
+                display: block;
+            }
+            .nav-item:hover .select1{
+                display: block;
+            }
+            .navbar-toggler{
+                color: #FFFFFF;
+                margin-left: 80%;
+            }
+            .navbar{
+                margin-bottom: 0px;
+            }
+        </style>
+       
+	</head>
+	<body>
+        
+        <nav class="navbar navbar-expand-md" style="background-color: #5C9CEB;">
+            <div class="container">
+                <div class="row"> 
+       <div class="col-sm-2 logo "><img src="images/logowinterzone.png" class="img-fluid"></div>
+       
+       
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+  </button>
+  <div class="col-sm-7 collapse navbar-collapse " id="collapsibleNavbar" style="text-align: center;">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">首页<div id="yi" class="d-none d-sm-none d-md-block d-lg-block"></div>
+        </a>
+         
+        
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">关于我们<div id="yi" class="d-none d-sm-none d-md-block d-lg-block"></div></a>
+        <ul class="select">
+            
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">精选活动<div class="d-none d-sm-none d-md-block d-lg-block" id="yi"></div>
+        </a>
+        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="listings.html">清峰商城<div id="yi" class="d-none d-sm-none d-md-block d-lg-block"></div>
+        
+        </a>
+        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">公众号<div id="yi" class="d-none d-sm-none d-md-block d-lg-block"></div></a>
+        <ul class="select1">
+           <div class="row">
+               <div class="col-sm-6 hj">
+                  <img src="images/erwei1.jpg" class="img-fluid">
+                  <p>扫码关注公众号</p>
+               </div>
+               <div class="col-sm-6 hj">
+                   <img src="images/erwei1.jpg" class="img-fluid">
+                   <p>扫码进入小程序</p>
+               </div>
+              
+           </div>
+        </ul> 
+      </li>
+       
+       
+       
+    </ul>
+  </div>  
+     <div class="col-sm-3 search d-none d-sm-none d-md-block d-lg-block">
+         <div class="sea">
+         <a id="lan9" href=""><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
+           <a id="lan0" href="javascript:void(0);"><i  class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+         </div>
+         <div class="lan">
+             <div id="close">
+             	<i class="fa fa-window-close fa-2x"></i>
+             </div>
+             <div class="lan1">
+                 <h2>Winter Zone</h2>
+                 <h4>Contact information</h4>
+                 <span>——————————</span>
+                 <li><i class="fa fa-phone"></i>(+40)74 0920 2288</li>
+                 <li><i class="fa fa-envelope-o"></i>office@example.com</li>
+                 <li><i class="fa fa-map-marker"></i>New York 11673 Collins</li>
+                 
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+             </div>
+             
+             <div class="lan2">
+                 <h4>Post thumbnails slider</h4>
+                 <span>——————————</span>
+                 <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="images/blog-post-1-min-700x450.jpg" class="img-fluid">
+        </div>
+        <div class="swiper-slide"><img src="images/blog-post-2-min-700x450.jpg" class="img-fluid"></div>
+        <div class="swiper-slide"> <img src="images/blog-post-6-min-700x450.jpg" class="img-fluid"></div>
+        <div class="swiper-slide"> <img src="images/blog-post-8-min-700x450.jpg" class="img-fluid"></div>
+        
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+
+
+          </div>
+          <div class="lan3">
+              <h4>Tags</h4>
+              <span>——————————</span>
+              <div class="lan3-1">
+                                    <a href="#">activity</a>
+                                    <a href="#">chalet</a>
+                                    <a href="#">engine care</a>
+                                    <a href="#">engineering</a>
+                                    <a href="#">equipment</a>
+                                    <a href="#">mount</a>
+                                    <a href="#">snow</a>
+                                    <a href="#">travel</a>
+                                    <a href="#">winter</a>
+                                    <a href="#">winter season</a>
+                                    </div>
+             
+         </div>
+     </div>
+</div>
+ </div>
+</nav>
+  
+        
+
+<div class="img">
+      <div class="container">
+        
+            <p class="r">RENT WINTER EQUIPMENT</p>
+            <p class="w">2017 Winter Skis are Now Available</p>
+            
+        </div>
+        </div> 
+        <div class="mid" style="background-color: #F7F7F7;margin-bottom: 50px;">
+         <div class="container">
+             <div class="row">
+             <div class="title">
+                 <h1>LATEST EQUIPMENT</h1>
+                 <span>————</span>
+                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur.</p>
+             </div>
+             
+             <div class="col-sm-4 shanl">
+                 <div class="shan">
+                 <a class="" href="">
+                 <img src="images/winterzone-Blue-Skis-Maskk-800x800.jpg" 
+                 class="img-fluid">
+                 </a>
+                 <div class="huan"></div>
+                 </div>
+                 <div class="ski">
+                 <h3>Skis mask</h3>
+                 <span>——</span>
+                 <p>Unisex | 5$ per day</p>
+                 </div>
+             </div>
+             <div class="col-sm-4 shanl">
+                  <div class="shan">
+                 <a href="">
+                 <img src="images/winterzone-Snowboard-800x800.jpg" class="img-fluid">
+                 </a>
+                 <div class="huan"></div>
+                 </div>
+                 <div class="ski">
+                 <h3>Snowboard</h3>
+                 <span>——</span>
+                 <p>Unisex | 10$ per day | Size 38-45</p>
+                 </div>
+                 
+             </div>
+             <div class="col-sm-4 shanl">
+                  <div class="shan">
+                 <a href="">
+                 <img src="images/winterzone-full-equipment-800x800.jpg" class="img-fluid">
+                 </a>
+                 <div class="huan"></div>
+                 </div>
+                 <div class="ski">
+                 <h3>Snowboard equipment</h3>
+                 <span>——</span>
+                 <p>Unisex | 99$ per day</p>
+                 </div>
+             </div>
+             
+             <div class="col-sm-4 shanl">
+                 <div class="shan">
+                 <a class="" href="">
+                 <img src="images/WINTERZONE-Snowmobile-800x800.jpg" 
+                 class="img-fluid">
+                 </a>
+                 <div class="huan"></div>
+                 </div>
+                 <div class="ski">
+                 <h3>Snowmobile</h3>
+                 <span>——</span>
+                 <p>Unisex | 50$ per day</p>
+                 </div>
+             </div>
+             <div class="col-sm-4 shanl">
+                  <div class="shan">
+                 <a href="">
+                 <img src="images/winterzone-red-skiss-800x800.jpg" class="img-fluid">
+                 </a>
+                 <div class="huan"></div>
+                 </div>
+                 <div class="ski">
+                 <h3>Skis</h3>
+                 <span>——</span>
+                 <p>Unisex | 20$ per day | Size 22-54</p>
+                 </div>
+                 
+             </div>
+             <div class="col-sm-4 shanl">
+                  <div class="shan">
+                 <a href="">
+                 <img src="images/WINTERZONE-Ski-Pole-stick-800x800.jpg" class="img-fluid">
+                 </a>
+                 <div class="huan"></div>
+                 </div>
+                 <div class="ski">
+                 <h3>Ski Pole stick</h3>
+                 <span>——</span>
+                 <p>Unisex | 10$ per day</p>
+                 </div>
+             </div>
+             </div>
+         </div></div>
+	
+       
+           <div class="numw">
+                <div class="numb">
+               <div class="huad" id="dd">
+                   </div>
+                   </div> 
+            <div class="row" style="margin-right: 0px;">
+           <div class="col-sm-3 num">
+               <p id="tm" class="shu">820</p>
+               <span>————</span>
+               <p class="zi">Equipments</p>
+           </div>
+           <div class="col-sm-3 num">
+               
+                <p id="tm1" class="shu">152</p>
+               <span>————</span>
+               <p class="zi">Experience Instructors</p>
+           </div>
+           <div class="col-sm-3 num">
+                <p id="tm2" class="shu">554</p>
+               <span>————</span>
+               <p class="zi">Happy Clients</p>
+           </div>
+           <div class="col-sm-3 num"> 
+           <p id="tm3" class="shu">25</p>
+               <span>————</span>
+               <p class="zi">Years Of Experience</p></div>
+           
+           
+           </div>
+           
+           
+           
+           
+           
+       </div>
+    
+       <div class="container">
+           <div class="row">
+               <div class="title">
+                                <h1>LATEST EQUIPMENT</h1>
+                                <span>————</span>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+               <div class="col-sm-9">
+                   
+                   
+                   
+                   <div id="accordion">
+    <div class="card">
+      <div id="dian" class="card-header" data-toggle="collapse" href="#collapseOne">
+        
+         <h5>OUR EQUIPMENT
+          <i class="plus fa fa-plus" ></i>
+          <i class="minus fa fa-minus"></i>
+        </h5>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" data-toggle="collapse" href="#collapseTwo">
+       <h5>RACE TRAINING
+         <i class="plus fa fa-plus" ></i>
+         <i class="minus fa fa-minus"></i>
+       </h5>
+      
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" data-toggle="collapse" href="#collapseThree">
+        
+         <h5>SKI TOURING
+           <i class="plus fa fa-plus" ></i>
+           <i class="minus fa fa-minus"></i>
+         </h5>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    
+    
+     <div class="card">
+      <div class="card-header" data-toggle="collapse" href="#collapsesix">
+        
+         <h5>BOOKING
+           <i class="plus fa fa-plus" ></i>
+           <i class="minus fa fa-minus"></i>
+         </h5>
+      </div>
+      <div id="collapsesix" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    
+     <div class="card">
+      <div class="card-header" data-toggle="collapse" href="#collapseFive">
+        
+         <h5>PRICINGS
+           <i class="plus fa fa-plus" ></i>
+           <i class="minus fa fa-minus"></i>
+         </h5>
+      </div>
+      <div id="collapseFive" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+               </div>
+               <div class="col-sm-3">
+                    <img src="images/winterzone-services.jpg" class="img-fluid">
+               </div>
+               
+               
+               
+               
+           </div>
+       </div>
+       
+       <div class="vide">
+           <div class="container">
+       <div class="bofa">
+       <img class="tu" src="images/232332.png" />
+       </div>
+        <div class="tan">
+       <div class="kuan">
+           <span class="cuo"><i class="fa fa-times fa-2x"></i></span></div>
+       
+       </div>
+       </div>
+       </div>
+       
+       <div class="container">
+           <div class="row" style="margin-top: 50px;">
+               <div class="title">
+                                <h1>LATEST EQUIPMENT</h1>
+                                <span>————</span>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+               
+               <div class="col-sm-4 de">
+                   <img src="images/winterzone-gallery1-1.jpg" class="kai img-fluid">
+                   
+               </div>
+               <div class="col-sm-4 de">
+                    <img src="images/winterzone-gallery2-2.jpg" class="kai img-fluid">
+                    <img src="images/winterzone-gallery3.jpg" class="kai img-fluid" style="margin-top: 20px;">
+               </div>
+               <div class="col-sm-4 de">
+                    <img src="images/winterzone-gallery4.jpg" class="kai img-fluid">
+               </div>
+               
+               <div class="tai">
+                     <div class="tah">
+                        <span class="tah1"><i class="fa fa-arrows-alt"></i></span>
+                        <img id="i3" src="" class="img-fluid">
+                        
+                           <span class="tah2"><i class="fa fa-times"></i></span>
+                                           <div class="m"></div>
+                                           </div>
+                        <div class="tahfd">
+                                  <span class="tah11"><i class="fa fa-arrows-alt"></i></span>
+                   <img id="i4" src="" class="img-fluid">
+                   
+                             </div>
+               </div>
+           </div>
+       </div>
+       
+      
+      
+      <div class="tuhu">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6"></div>
+              <div class="col-sm-6 tulu">
+                  <div class="td">
+                      <h2>OUR TESTIMONIAL</h2>
+                      <span>————</span>
+                      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
+                  </div>
+                  
+                  
+                  
+                  <div class="swiper-container">
+  <div class="swiper-wrapper">
+      <div class="qie swiper-slide">
+      <div class="neir">
+    <img src="images/member2.png" class="img-circle" style="width: 120px;height: 120px;">
+      </div>
+     <div class="neir1"> 
+     <h4>Rick Nelson</h4>
+      <h5>Music Artist</h5>
+      </div>
+      <div class="neir2"><i class="fa fa-quote-right fa-4x" aria-hidden="true"></i></div>
+ 
+     <p id="pl">
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. 
+         
+     </p>
+      
+     </div> 
+     
+       <div class="qie swiper-slide">
+        <div class="neir">
+      <img src="images/member3.png" class="img-circle" style="width: 120px;height: 120px;">
+        </div>
+       <div class="neir1"> 
+       <h4>Brian Bronson</h4>
+        <h5>Business Man</h5>
+        </div>
+        <div class="neir2"><i class="fa fa-quote-right fa-4x" aria-hidden="true"></i></div>
+       
+       <p id="pl">
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. 
+           
+       </p>
+        
+    </div>
+    
+      <div class="qie swiper-slide">
+       <div class="neir">
+     <img src="images/member4.png" class="img-circle" style="width: 120px;height: 120px;">
+       </div>
+      <div class="neir1"> 
+      <h4>Brian Bronson</h4>
+       <h5>Business Man</h5>
+       </div>
+       <div class="neir2"><i class="fa fa-quote-right fa-4x" aria-hidden="true"></i></div>
+      
+      <p id="pl">
+         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. 
+          
+      </p>
+       
+    </div>
+    
+    
+  </div>
+                 <div class="jiant">
+                      
+                      <a class="tou">
+                       <i class="fa fa-long-arrow-left fa-3x"></i>
+                      </a>
+                      <a class="tou1">
+                      <i class="fa fa-long-arrow-right fa-3x"></i>
+                      </a>
+                      
+                      
+                  </div>
+</div>
+
+     </div>
+          </div>
+          </div>
+      </div>
+      
+      <div class="contact">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 left">
+                  <div class="td">
+                      <h2>OUR TESTIMONIAL</h2>
+                      <span>————</span>
+                      <p>
+                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+accusantium doloremque laudantium, totam rem aperiam,
+eaque ipsa quae ab illo.
+                      </p>
+                      <h1>Call us: +40 444 656 322</h1>
+                      <a class="contae" href="">CONTACT NOW</a>
+                  </div>
+                  
+              </div>
+              <div class="col-sm-6 left"></div>
+          </div>
+      </div>
+      
+      </div>
+      
+      <div style="background-color: #F9F9F9;width: 100%;">
+      <div class="container">
+       <div class="di">
+           <div class="title">
+                            <h1>LATEST EQUIPMENT</h1>
+                            <span>————</span>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+           cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+               
+               <div class="swiper-container">
+               <div class="swiper-wrapper">
+                   <div class="swiper-slide">
+          		<div class="lo"><img src="images/client1-1.png" class="img-fluid"></div>
+                
+                
+          </div>
+                    <div class="swiper-slide">
+                  <div class="lo"><img src="images/client2-1.png" class="img-fluid"></div>
+                 </div>
+                 
+                   <div class="swiper-slide">
+                   <div class="lo"><img src="images/client3-1.png" class="img-fluid"></div>
+               </div>
+               
+                <div class="swiper-slide">
+                  <div class="lo"> <img src="images/client5-1.png" class="img-fluid"></div>
+               </div>
+             
+             
+              <div class="swiper-slide">
+                <div class="lo"><img src="images/client6-1.png" class="img-fluid"></div>
+             </div>
+              <div class="swiper-slide">
+                <div class="lo"> <img src="images/client7-1.png" class="img-fluid"></div>
+             </div>
+             
+              <div class="swiper-slide">
+                 <div class="lo"><img src="images/client8-1.png" class="img-fluid"></div>
+             </div>
+             
+              <div class="swiper-slide">
+                <div class="lo"> <img src="images/client4-1.png" class="img-fluid"></div>
+             </div>
+             
+             
+             
+             
+          </div>
+          <div class="jiant1">
+              
+              <a class="tou2">
+               <i class="fa fa-long-arrow-left fa-3x"></i>
+              </a>
+              <a class="tou3">
+              <i class="fa fa-long-arrow-right fa-3x"></i>
+              </a>
+              
+              
+          </div>
+           </div>
+      
+      </div>
+      </div>
+       </div>
+      
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-3 foo">
+              <li><i class="fa fa-angle-right fa-2x"></i><a href="">TERMS & CONDITIONS</a></li>
+             <li><i class="fa fa-angle-right fa-2x"></i><a href="">CONTACT US</a></li>
+             <li><i class="fa fa-angle-right fa-2x"></i><a href="">LEGAL & POLICY</a></li>         
+                  </div>
+                  <div class="col-sm-3 foo">
+                <li><i class="fa fa-angle-right fa-2x"></i><a href="">ABOUT US</a></li>
+               <li><i class="fa fa-angle-right fa-2x"></i><a href="">BLOG POST</a></li>
+          <li><i class="fa fa-angle-right fa-2x"></i><a href="">SERVICES</a></li> 
+                      
+                      
+                  </div>
+                  <div class="col-sm-3 foo">
+                <li><i class="fa fa-angle-right fa-2x"></i><a href="">ABOUT SERVICE</a></li>
+               <li><i class="fa fa-angle-right fa-2x"></i><a href="">PRICINGS</a></li>
+              <li><i class="fa fa-angle-right fa-2x"></i><a href="">LATEST NEWS</a></li>    
+                      
+                  </div>
+                  <div class="col-sm-3 foo">
+                    <li><i class="fa fa-phone fa-2x"></i><a href="">ABOUT SERVICE</a></li>
+                   <li><i class="fa fa-envelope-o fa-2x"></i><a href="">PRICINGS</a></li>
+                  <li><i class="fa fa-map-marker fa-2x"></i><a href="">LATEST NEWS</a></li>    
+                          
+                      </div>
+              </div>
+          </div>
+         
+      </footer>
+      
+       <div class="fm">
+          <p>Copyright 2018 by ModelTheme. All Rights Reserved.</p>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <script src="dist/js/swiper.min.js"></script>
+      <script>
+           var mySwiper = new Swiper ('.tuhu .swiper-container', {
+           navigation: {
+      nextEl: '.tou',
+      prevEl: '.tou1',
+    }
+    });
+    
+      var mySwiper = new Swiper ('.di .swiper-container', {
+          autoplay:true,
+         slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+           navigation: {
+      nextEl: '.tou2',
+      prevEl: '.tou3',
+    }
+    });
+    
+      var mySwiper = new Swiper ('.lan2 .swiper-container', {
+          observer:true,//修改swiper自己或子元素时，自动初始化swiper
+          observeParents:true,//修改swiper的父元素时，自动初始化swiper
+           navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+    });
+    
+    
+    
+    
+      </script>
+      
+    </body>
+</html>

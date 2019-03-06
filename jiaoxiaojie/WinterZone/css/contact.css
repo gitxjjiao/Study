@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.list h3{
+    font-weight: 700;
+     margin-bottom: 30px;
+     margin-top: 30px;
+}
+.list1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+.list1 a{
+    color: #00008B;
+    
+}
+.lists{
+    width: 100%;
+    border-bottom: 1px solid #EBEBEB;
+}
+.inf{
+    width: 100%;
+    background-image: url(../images/contact-1.jpg);
+}
+.info{
+    margin: 0px auto;
+    margin-top: 10%;
+    background-color: #FFF;
+    margin-bottom: 10%;
+}
+.info li{
+    list-style: none;
+    border-bottom: 0.5px solid #EBEBEB;
+}
+.info input{
+    width:300px;
+    height: 40px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border: none;
+}
+.info textarea{
+    border: none;
+}
+.info button{
+    width: 30%;
+    padding: 15px;
+    border-radius: 23px;
+    background-color:#C82333;
+    color: #FFF;
+    border: none;
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 900;
+    
+}
+.info button:hover{
+    background-color:#5C9CEB;
+    color: #FFF;
+}
+.infom{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+.infom i{
+  color: #C82333;  
+}
