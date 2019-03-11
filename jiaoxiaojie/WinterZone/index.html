@@ -338,14 +338,15 @@ cillum dolore eu fugiat nulla pariatur.</p>
                    
                    <div id="accordion">
     <div class="card">
-      <div id="dian" class="card-header" data-toggle="collapse" href="#collapseOne">
+      <div class="card-header" data-toggle="collapse" href="#collapseOne">
         
-         <h5>OUR EQUIPMENT
-          <i class="plus fa fa-plus" ></i>
-          <i class="minus fa fa-minus"></i>
-        </h5>
+         <h5>OUR EQUIPMENT</h5>
+          <span class="minus"></span>
       </div>
-      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+      
+      
+      
+      <div id="collapseOne" class="collapse" data-parent="#accordion">
         <div class="card-body">
          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </div>
@@ -353,10 +354,8 @@ cillum dolore eu fugiat nulla pariatur.</p>
     </div>
     <div class="card">
       <div class="card-header" data-toggle="collapse" href="#collapseTwo">
-       <h5>RACE TRAINING
-         <i class="plus fa fa-plus" ></i>
-         <i class="minus fa fa-minus"></i>
-       </h5>
+       <h5>RACE TRAINING</h5>
+       <span class="minus"></span>
       
       </div>
       <div id="collapseTwo" class="collapse" data-parent="#accordion">
@@ -368,10 +367,8 @@ cillum dolore eu fugiat nulla pariatur.</p>
     <div class="card">
       <div class="card-header" data-toggle="collapse" href="#collapseThree">
         
-         <h5>SKI TOURING
-           <i class="plus fa fa-plus" ></i>
-           <i class="minus fa fa-minus"></i>
-         </h5>
+         <h5>SKI TOURING</h5>
+          <span class="minus"></span>
       </div>
       <div id="collapseThree" class="collapse" data-parent="#accordion">
         <div class="card-body">
@@ -384,10 +381,8 @@ cillum dolore eu fugiat nulla pariatur.</p>
      <div class="card">
       <div class="card-header" data-toggle="collapse" href="#collapsesix">
         
-         <h5>BOOKING
-           <i class="plus fa fa-plus" ></i>
-           <i class="minus fa fa-minus"></i>
-         </h5>
+         <h5>BOOKING</h5>
+         <span class="minus"></span>
       </div>
       <div id="collapsesix" class="collapse" data-parent="#accordion">
         <div class="card-body">
@@ -399,10 +394,8 @@ cillum dolore eu fugiat nulla pariatur.</p>
      <div class="card">
       <div class="card-header" data-toggle="collapse" href="#collapseFive">
         
-         <h5>PRICINGS
-           <i class="plus fa fa-plus" ></i>
-           <i class="minus fa fa-minus"></i>
-         </h5>
+         <h5>PRICINGS</h5>
+         <span class="minus"></span>
       </div>
       <div id="collapseFive" class="collapse" data-parent="#accordion">
         <div class="card-body">
@@ -730,7 +723,7 @@ eaque ipsa quae ab illo.
     });
     
       var mySwiper = new Swiper ('.lan2 .swiper-container', {
-          observer:true,//修改swiper自己或子元素时，自动初始化swiper
+          observer  :true,//修改swiper自己或子元素时，自动初始化swiper
           observeParents:true,//修改swiper的父元素时，自动初始化swiper
            navigation: {
       nextEl: '.swiper-button-next',

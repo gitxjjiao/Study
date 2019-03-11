@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+        <script src="//cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("li").first().hide();
+            $("li").last().css("color","red");
+            $("p").next().css("color","blue");
+            $("p").nextAll().css("color","blue");
+            $("p").prev().css("color","yellow");
+            $(".sp").siblings().css("color","green");
+            $(".sp").parent().css("color","pink");
+        });
+        
+        
+        
+        
+        
+        </script>
+	</head>
+	<body>
+        <ul>
+            <li>1234</li>
+            <li>5678</li>
+            <li>aaaaa</li>
+            <li>bbbb</li>
+            <li>ccccc</li>
+        </ul>
+        
+        <!-- 紧邻下一个元素 -->
+        <p>Hello</p>
+        <div><span>And Again</span></div>
+        <p>mmmmm</p>
+        <!-- 紧邻前一个元素 -->
+        <div>shiluying</div>
+        <p>是</p><div>
+        <span>路</span></div>
+        <p>赢</p>
+        <!-- 同辈元素 -->
+        
+        <div>
+            <span class="sp">等等等</span>
+           <h5>得得得</h5>
+            <h6>tttttt</h6>
+        </div>
+        
+        
+        
+	</body>
+</html>

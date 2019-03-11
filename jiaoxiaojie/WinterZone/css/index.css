@@ -163,7 +163,7 @@
  .panel-title a{
      text-decoration: none;
  }
- .plus{
+ /* .plus{
      margin-top:4px;
      float: right;
      color: #B9BBBE;
@@ -173,7 +173,7 @@
      margin-top:4px;
      display: none;
      color: #B9BBBE;
- }
+ } */
  .card h5{
      color:#0C5460;
  }
@@ -513,3 +513,16 @@ margin-top: 15px;
   #lan9 i:hover{ 
    transform: scale(1.2);
    }
+.card-header h5{
+    float: left;
+}      
+.card-header span{
+    float: right;
+}   
+   
+.card-header .plus:before{
+    content: "-";
+}
+.card-header .minus:before{
+    content: "+";
+}

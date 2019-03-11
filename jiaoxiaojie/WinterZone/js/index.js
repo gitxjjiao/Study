@@ -1,16 +1,15 @@
  
              $(document).ready(function(){
-            $(".plus").click(function(){
-                $(this).css("display","none");
-                $(this).siblings().show();
-                $(".panel-body").slideToggle("slow");
+           
+           
+          $("#accordion").on('hide.bs.collapse show.bs.collapse','.collapse' ,function (e) {
+                   var $this= $(this)
+    $this.prev().find("span").toggleClass("plus");
+    $this.prev().find("span").toggleClass("minus");
             });
             
-            $(".minus").click(function(){
-                $(this).css("display","none");
-                $(this).siblings().show();
-                $(".panel-body").slideToggle("slow"); 
-            });
+
+
             
             $(".tu").click(function(){
                 $(".tan").css("display","block");
