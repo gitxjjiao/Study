@@ -6,22 +6,34 @@
         <script src="//cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
         <script>
         $(document).ready(function(){
-            $("li").first().hide();
-            $("li").last().css("color","red");
-            $("p").next().css("color","blue");
-            $("p").nextAll().css("color","blue");
-            $("p").prev().css("color","yellow");
-            $(".sp").siblings().css("color","green");
+            $("li").first().hide();//匹配第一个元素
+            $("li").last().css("color","red");//最后一个元素 
+            // $("p").next().css("color","blue");//紧邻着元素的后一个同辈元素
+            $("p").nextAll().css("color","blue");//紧邻着元素的后所有同辈元素
+            $("p").prev().css("color","yellow");//紧邻着元素的前一个同辈元素
+            $(".sp").siblings().css("color","green");//找到每个元素的同辈元素
             $(".sp").parent().css("color","pink");
         });
-        
-        
-        
-        
-        
         </script>
 	</head>
 	<body>
+        
+        
+        
+         <div>
+             <p></p>
+            <span></span>
+    <!-- 注释 -->
+</div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <ul>
             <li>1234</li>
             <li>5678</li>
@@ -33,16 +45,16 @@
         <!-- 紧邻下一个元素 -->
         <p>Hello</p>
         <div><span>And Again</span></div>
-        <p>mmmmm</p>
+        <!-- <p>mmmmm</p> -->
         <!-- 紧邻前一个元素 -->
         <div>shiluying</div>
-        <p>是</p><div>
+        <!-- <p>是</p><div> -->
         <span>路</span></div>
-        <p>赢</p>
+        <!-- <p>赢</p> -->
         <!-- 同辈元素 -->
         
-        <div>
-            <span class="sp">等等等</span>
+        <div>等等等
+            <span class="sp"></span>
            <h5>得得得</h5>
             <h6>tttttt</h6>
         </div>

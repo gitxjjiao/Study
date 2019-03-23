@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+        <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+        <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+        <script src="https://cdn.bootcss.com/lodash.js/4.17.11/lodash.min.js"></script>
+        <style>
+            #list2 input{
+                 width: 100%;
+                 margin-top: 20px;
+                 border: 1px solid #EBEBEB;
+                 padding: 6px;
+            }
+            #list2 button{
+                 margin-top: 20px;
+            }
+           .ull{
+                padding-left: 0px;
+           }
+           .ll{
+               width: 100%;
+               list-style: none;
+               padding: 10px;
+               border: 1px solid #EBEBEB;
+               margin-bottom: 10px;
+              
+           }
+           .lo{
+               width: 100%;
+               list-style: none;
+               padding: 10px;
+               border: 1px solid #EBEBEB;
+               margin-bottom: 10px;
+               background-color: #FAEBCC;
+           }
+           
+           .bb{
+               float: right;
+           }
+           .b1{
+               float: right;
+           }
+        </style>
+	</head>
+	<body>
+        <div class="panel panel-info" style="width: 60%;margin: 10% auto;" id="n">
+	<input type="checkbox" />
+	
+</div>
+        
+        
+        
+        
+        
+        <script type="text/babel">
+            
+                      
+           class Welcome extends React.Component {
+               constructor(props) {
+      super(props);
+      this.state = {value: 'Hello Runoob!',numbers:["123"]};
+      this.ch = this.ch.bind(this);
+      this.dian = this.dian.bind(this);
+  }
+               ch(event) {
+               	this.setState({value: event.target.value});
+                
+               }
+                dian(){
+                 if(this.state.value!=""){
+                  	this.setState({numbers: this.state.numbers.concat(this.state.value)});
+                    this.setState({value:""});
+                    }else{
+                        alert("qqq");
+                    }
+                   
+                   
+               }
+              
+               
+               
+  render() {
+    return (
+    
+    <div className="panel-body" >
+		 <h1 id="nei">我的任务列表,{this.state.numbers.length}</h1>
+        <div id="list1">
+           
+              <NumberList numbers={this.state.numbers}/>
+             
+        </div>
+        <div id="list2">
+            <input id="in" type="text" placeholder="请输入新任务名称" value={this.state.value} onChange={this.ch}/>
+            <button type="button" onClick={this.dian}>添加新任务</button>
+           
+        </div>
+      
+	</div>);
+  }
+}
+
+
+
+ class NumberList extends React.Component {
+                        constructor(props) {
+               super(props);
+                 this.state = {style:"red",inde:[]};
+                 this.dh = this.dh.bind(this);
+                 this.del = this.del.bind(this);
+           } 
+          
+          
+         
+          dh(event){
+              var c=event.target.getAttribute("datak");
+              var s=this.state.inde
+              var g=_.indexOf(s, c+"")
+              if(g==-1){
+                 s.push(c); 
+              }
+              else{
+                 s.splice(g,1); 
+              }
+              this.setState({
+                  inde: s
+              });
+          }
+           
+            del(event){
+               var c=event.target.getAttribute("datak");
+               console.log(c);
+               var numbers=this.props.numbers;
+                numbers.splice(c,1);
+               this.setState({numbers:numbers})
+           }
+           
+           
+            
+           render() {
+               var st=this.state.style;
+               var style={
+                   color:st,
+                 
+               }
+               var ll="ll";
+              const numbers = this.props.numbers;
+               const listItems =numbers.map((number,index) =>
+               
+               {
+                   if(_.indexOf(this.state.inde, index+"")>-1){
+                   style = {
+                   color:'blue'
+                   }
+                    var ll="lo";
+               }else{
+                   style = {
+                   color:'red'
+                   }
+                    var ll="ll";
+               }
+               
+                return(
+                <li  className={ll} style={style} key={number.toString()}>
+                   {number}
+                   <button className="b1"  type="button" datak={index} onClick={this.dh}>点击完成</button>
+                   <button className="bb"  type="button" datak={index} onClick={this.del}>删除</button>
+                 </li>
+                ) 
+               }
+               );
+               
+               return (<ul className="ull">{listItems}</ul>)
+           }
+           
+}          
+
+
+
+
+
+
+
+
+ 
+        
+        
+        
+        
+        
+          ReactDOM.render( 
+            <Welcome/>,
+            
+            document.getElementById('n'),
+          ); 
+           
+           
+           
+           
+           
+  
+
+
+
+
+
+        </script>
+        
+        
+	</body>
+</html>

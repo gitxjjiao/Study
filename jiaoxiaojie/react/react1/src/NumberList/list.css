@@ -1,0 +1,31 @@
+
+           .ll{
+               width: 100%;
+               list-style: none;
+               padding: 10px;
+               border: 1px solid #EBEBEB;
+               margin-bottom: 10px;
+               padding-top: 15px;
+               padding-bottom: 18px;
+               font-weight: 600;
+               box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+           }
+           .lo{
+               width: 100%;
+               list-style: none;
+               padding: 10px;
+               border: 1px solid #EBEBEB;
+               margin-bottom: 10px;
+               background-color: #FAEBCC;
+               padding-top: 15px;
+               padding-bottom: 18px;
+               font-weight: 600;
+               box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+           }
+           
+           .bb{
+               float: right;
+           }
+           .b1{
+               float: right;
+           }

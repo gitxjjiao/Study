@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Hello React!</title>
+<link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">    
+<script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+<script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+<script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+
+<div id="root"></div>
+<script type="text/babel">
+
+function Header(props){
+  return(
+    <div className="card-header">
+      练习demo-1
+    </div>
+  )
+}
+function TodoList(props){
+  const todos = props.todos;
+  const list = todos.map((todo) =>
+    <li key={todo} className="list-group-item">{todo}</li>
+  );
+  return (
+    <ul className="list-group">{list}</ul>
+  );
+}
+
+class TodoForm extends React.Component{
+  render(){
+    const ele = <form style={{paddingTop:30}}>
+      <div style={{marginBottom:10}} className="form-group">
+        <input value = {this.props.inputData} onChange = {this.props.updateState} type="text" className="form-control" id="input" placeholder="请输入任务名称"/>
+      </div>
+      <button onClick={this.props.clickBtn} id="btnAdd" className="btn btn-primary">添加任务</button>
+    </form>;
+    return (
+    ele
+    );
+  }
+}
+class MyTodo extends React.Component{
+  constructor(props) {
+      super(props);
+      this.state = {
+        data: '',
+        todosArr : ['默认任务1']
+      }
+      this.updateState = this.updateState.bind(this);
+      this.clickBtn = this.clickBtn.bind(this);
+      this.updateTodos = this.updateTodos.bind(this);
+  };
+  updateState(e) {
+      const str = e.target.value;
+      if(str.length>0){
+        this.setState({data: str});
+      }else{
+        return false;
+      }
+  }
+  updateTodos(){
+    this.setState({todosArr: [...this.state.todosArr,this.state.data]});
+  }
+  clickBtn(e){
+      e.preventDefault()
+      if(this.state.data.length<1){
+        alert('请输入任务名称!');
+        return false;
+      }
+      this.updateTodos();
+      this.setState({data:''});
+  }
+  
+  render() {
+    return(
+      <div style={{maxWidth:600,margin:'auto',marginTop:15}} className="card">
+        <Header />
+        <div className="card-body">
+          <h2>我的任务列表</h2>
+          <TodoList todos={this.state.todosArr} />
+          <TodoForm inputData={this.state.data} updateState={this.updateState} clickBtn={this.clickBtn} />
+        </div>
+      </div>
+    );
+  }
+}
+ReactDOM.render(
+	<MyTodo />,
+	document.getElementById('root')
+);
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+ class NumberList extends React.Component {
+                        constructor(props) {
+               super(props);
+               
+           }
+            numbers = this.props.numbers;
+            listItems =this.numbers.map((number) =>
+             <li  className="ll" key={number.toString()}>
+               {number}
+              
+               <button className="b1"  type="button" >点击完成</button>
+               <button className="bb"  type="button" >删除</button>
+             </li>
+           );
+           render() {
+               return 
+                <ul className="ull">{this.listItems}</ul>
+           }
+           
+}          
+
+
+
+
+
+ function NumberList(props) {
+                       
+             const numbers = props.numbers;
+             const listItems = numbers.map((number) =>
+               <li  className="ll" key={number.toString()}>
+                 {number}
+                
+                 <button className="b1"  type="button" >点击完成</button>
+                 <button className="bb"  type="button" >删除</button>
+               </li>
+             );
+             return (
+               <ul className="ull">{listItems}</ul>
+             );
+           } 
+           
+           
+           
+           
+            class NumberList extends React.Component {
+                                   constructor(props) {
+                          super(props);
+                           this.state = {style:"red"};
+                            this.dh = this.dh.bind(this);
+                      } 
+                      var st=this.state.style;
+                      var style={
+                          color:st,
+                      }
+                      dh(event){
+                          this.setState({style:"blue"});
+                      }
+                       numbers = this.props.numbers;
+                       listItems =this.numbers.map((number) =>
+                        <li  className="ll" key={number.toString()} style={style}>
+                          {number}
+                         
+                          <button className="b1"  type="button" onClick={dh}>点击完成</button>
+                          <button className="bb"  type="button" >删除</button>
+                        </li>
+                      );
+                      render() {
+                          return 
+                           <ul className="ull">{this.listItems}</ul>
+                      }
+                      
+           }          
