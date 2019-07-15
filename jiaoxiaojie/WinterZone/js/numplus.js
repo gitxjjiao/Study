@@ -9,7 +9,7 @@
     
     };
     function zeng(){
-    var numBox1 = document.getElementById('tm');
+    var numBox1 = document.getElementById('tm0');
      var numBox2 = document.getElementById('tm1');
       var numBox3 = document.getElementById('tm2');
        var numBox4 = document.getElementById('tm3');
@@ -32,7 +32,7 @@
        	numSlideFun();
        }
        // 运行
-       numRunFun(0,820,numBox1);
+       numRunFun(0,829,numBox1);
        numRunFun(0,152,numBox2);
        numRunFun(0,554,numBox3);
       numRunFun(0,25,numBox4);

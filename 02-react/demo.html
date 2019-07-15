@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Hello React!</title>
+<link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">    
+<script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+<script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+<script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+
+<div id="root"></div>
+<script type="text/babel">
+let todos = ['默认任务1'];
+let listItems = todos.map((todos) =>
+  <li className="list-group-item">{todos}</li>
+);
+function addTodo(e){
+    e.preventDefault()
+    // console.log(document.getElementById('input').value)
+    const str = document.getElementById('input').value
+    if(str.length<1){
+        alert('请输入任务名称')
+        return false;
+    }
+    document.getElementById('input').value = ''
+    todos.push(str)
+    listItems = todos.map((todos) =>
+      <li className="list-group-item">{todos}</li>
+    );
+    ReactDOM.render(
+        <div style={{margin:10}} className="card">
+          <div className="card-header">
+            练习demo
+          </div>
+          <div className="card-body">
+            <h2>我的任务列表</h2>
+            <ul className="list-group">
+              {listItems}
+            </ul>
+            <form style={{paddingTop:30}}>
+              <div style={{marginBottom:10}} className="form-group">
+                <input type="text" className="form-control" id="input" placeholder="请输入任务名称"/>
+              </div>
+              <button onClick={addTodo} id="btnAdd" className="btn btn-primary">添加任务</button>
+            </form>
+          </div>
+        </div>,
+        document.getElementById('root')
+    );
+}
+ReactDOM.render(
+	<div style={{margin:10}} className="card">
+      <div className="card-header">
+        练习demo
+      </div>
+      <div className="card-body">
+        <h2>我的任务列表</h2>
+        <ul className="list-group">
+          {listItems}
+        </ul>
+        <form style={{paddingTop:30}}>
+          <div style={{marginBottom:10}} className="form-group">
+            <input type="text" className="form-control" id="input" placeholder="请输入任务名称"/>
+          </div>
+          <button onClick={addTodo} id="btnAdd" className="btn btn-primary">添加任务</button>
+        </form>
+      </div>
+    </div>,
+	document.getElementById('root')
+);
+</script>
+
+</body>
+</html>

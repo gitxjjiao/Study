@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>vue2 demo 003</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+	    .completed{ color: green; text-decoration: line-through; }
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Vue js 2.0</a>
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container" id="app">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">React 练习一</div>
+                <div class="panel-body">
+                    <h1>{{ message }}（共 {{ todoCount }} 项）</h1>
+                    <ul class="list-group">
+                        <li class="list-group-item" v-bind:class="{ 'completed':todo.completed }" v-for="(todo, index) in todos">
+                            {{ todo.title }}
+                            <button class="btn btn-xs pull-right" v-bind:class="[todo.completed ? 'btn-danger' : 'btn-success']" v-on:click="toggleCompletion(todo)">{{ todo.btnText }}</button>
+                            <button class="btn btn-warning btn-xs pull-right" v-on:click="deleteTodo(index)">&nbsp;删除&nbsp;</button>
+                        </li>
+                    </ul>
+                    <form v-on:submit.prevent="addTodo(newTodo)">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="请输入新任务名称"
+                                   v-model="newTodo.title">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success" type="submit">添加任务</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+        	defaultText: '点我完成',
+            message: '我的任务列表',
+            todos: [
+                {id: 1, title: 'Learn Vuejs', completed: false, btnText:''}
+            ],
+            newTodo: {id: null, title: '', completed: false, btnText:''}
+        },
+        created: function () {
+		    this.newTodo.btnText = this.defaultText;
+		    this.todos[0].btnText = this.defaultText;
+		},
+        computed: {
+            todoCount(){
+                return this.todos.length;
+            }
+        },
+        methods: {
+            addTodo(newTodo){
+                this.todos.push(newTodo);
+                this.newTodo = {id: null, title: '', completed: false, btnText:this.defaultText};
+            },
+            deleteTodo(index){
+                this.todos.splice(index, 1);
+            },
+            toggleCompletion(todo){
+                todo.completed = !todo.completed;
+                todo.btnText = todo.completed?'重做':this.defaultText;
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
